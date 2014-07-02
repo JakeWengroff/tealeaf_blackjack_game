@@ -17,7 +17,7 @@ def calculate_total(cards)
 	end
 
   	#correct for Aces
-  	arr.select{|e| e == "A"}.count.times.do
+  	arr.select{|e| e == "A"}.count.times do
   		total -= 10 if total > 21
 	end
 
